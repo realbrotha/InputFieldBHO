@@ -22,6 +22,7 @@ v0.1 : 초기 작업</br>
 ## How to ??
 
 > cmd -> regsvr32 InputFieldBHO.dll
+> IE 브라우저 실행 -> 원하는 페이지로 이동 -> F9 Key 입력 -> 키로깅 가능 여부 확인 / DOM을 이용한 Input Value 획득 확인
 
 ![id_pwd](https://user-images.githubusercontent.com/28824715/49877259-5e7b6880-fe68-11e8-8c5e-abf901063e6c.jpg)
 
