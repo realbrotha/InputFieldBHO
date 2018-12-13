@@ -1,7 +1,13 @@
 # InputFieldBHO
-## Description
+
 제작 : 2012년도 1~2월쯤 </br>
 개발 환경 : vs 6.0 + SDK ->vs2015 포팅 진행</br>
+
+## Description
+* IE에서 구동가능 한 BHO
+* 입력되는 키값을 확인하기위해 KeyProc과 IE 브라운저의 keyEvent 부분 후킹하여 처리한다.
+* MSHTML을 이용하여 IwebBrowser2 -> IDisp -> Document -> Form -> Element 등을 얻어낸뒤 필드 값을 읽어서 화면에 출력한다.
+
 
 ## Issue....
 
