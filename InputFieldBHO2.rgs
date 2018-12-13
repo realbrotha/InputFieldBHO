@@ -1,0 +1,49 @@
+HKCR
+{
+	InputFieldBHO.InputFieldBHO2.1 = s 'InputFieldBHO2 Class'
+	{
+		CLSID = s '{256B37DB-CAF4-4190-8178-787427B9028A}'
+	}
+	InputFieldBHO.InputFieldBHO2 = s 'InputFieldBHO2 Class'
+	{
+		CLSID = s '{256B37DB-CAF4-4190-8178-787427B9028A}'
+		CurVer = s 'InputFieldBHO.InputFieldBHO2.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {256B37DB-CAF4-4190-8178-787427B9028A} = s 'InputFieldBHO2 Class'
+		{
+			ProgID = s 'InputFieldBHO.InputFieldBHO2.1'
+			VersionIndependentProgID = s 'InputFieldBHO.InputFieldBHO2'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{821F3F05-9A6A-4DF3-ADB9-8E3AF514309D}'
+		}
+	}
+}
+
+HKLM
+{
+  SOFTWARE
+  {
+	Microsoft
+	{   
+	 Windows
+	 {
+	   CurrentVersion
+	   {
+		 Explorer
+		 {
+		   'Browser Helper Objects'
+		   {
+			  ForceRemove {256B37DB-CAF4-4190-8178-787427B9028A} = s 'Made By HW BHO'
+		   }
+		 }
+	   }
+	  }
+	}
+  }
+}
